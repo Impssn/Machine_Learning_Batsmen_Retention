@@ -23,7 +23,7 @@ workbook4 = xlsxwriter.Workbook('C:/Users/sathya narayanan/Documents/Data_Mining
 workbook4a = load_workbook(filename="Result.xlsx")
                                                       #Getting Input Files
 
-                                               #initializing needed variables
+                                                 #initializing needed variables
 teams = []
 runs = []
 runs_at_win = []
@@ -125,9 +125,9 @@ for i in range(2,sheet4.max_row+1):
 workbook4a.save(filename="Result.xlsx")
                                                              #Saving output file
                                                           #Data Preparation
-                                                   # DATA - PREPARATION -ENDS
+                                                       # DATA - PREPARATION -ENDS
              
-                                                 # MACHINE - LEARNING - MODEL
+                                                  # MACHINE - LEARNING - MODEL
 result = pd.read_csv('C:/Users/sathya narayanan/Downloads/result.csv')
 X = result[['RECENT-FORM POINTS','CONSISTENCY POINTS','IPL RANK POINTS','TOTAL POINTS']].values
 y = result['RETENTION CHANCES'].values
@@ -140,10 +140,10 @@ print("Accuracy_Score : ",accuracy_score(y_test,y_pred))
 print("Precision_Score : ",precision_score(y_test,y_pred))
 print("Recall_Score : ",recall_score(y_test,y_pred))
 print("F1_Score : ",f1_score(y_test,y_pred))
-print("Confusion_Matrix : \n",confusion_matrix(y_test,y_pred)) # Matrix-format :tn,fp,fn,tp
+print("Confusion_Matrix : \n",confusion_matrix(y_test,y_pred))           # Matrix-format :tn,fp,fn,tp
 if model.predict([['27.9438014521585','0','2','29.9438014521585']]) < 0.5:
     print("\n Player not Retained")
 else:
     print("\n Player Retained")
-plt.scatter(X_test[:,0],y_pred)       # To plot test-data
+plt.scatter(X_test[:,0],y_pred)          # To plot test-data
 plt.show()
