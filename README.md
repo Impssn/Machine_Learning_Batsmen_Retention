@@ -16,6 +16,6 @@ Nowadays the IPL (Indian Premier League) is getting popular and the Auction in w
 ➔ Recall_Score :  1.0
 ➔ F1_Score :  1.0
 ➔ Confusion_Matrix : [[11  0]   
-                      [ 0 11]]    # Matrix-format :[tn,fp],[fn,tp]
+                      [ 0 11]]                   #Matrix-format :[tn,fp],[fn,tp]
 
  
