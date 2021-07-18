@@ -8,4 +8,14 @@ Nowadays the IPL (Indian Premier League) is getting popular and the Auction in w
 ➔ A player will get 0.5 marks for each percent of runs that he has contributed in the Total Team runs for the entire Season (Only previous season) and will get 1 mark for each percent of runs in contribution of Total runs scored by his Team in all the Winning matches.
 
 #Regression Algorithm used : 
-➔ Since the Output to be predicted is a YES '1' or NO '0' type, Logistic Regression Algorithm is used for this Machine Learning Model Implementation. 
+➔ Since the Output to be predicted is a YES '1' or NO '0' type, Logistic Regression Algorithm is used for this Machine Learning Model Implementation.
+
+#Performance Parameters :
+➔ Accuracy_Score :  1.0
+➔ Precision_Score :  1.0
+➔ Recall_Score :  1.0
+➔ F1_Score :  1.0
+➔ Confusion_Matrix : [[11  0]
+                      [ 0 11]]
+
+ 
