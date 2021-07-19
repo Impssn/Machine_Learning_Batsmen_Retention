@@ -146,4 +146,7 @@ if model.predict([['27.9438014521585','0','2','29.9438014521585']]) < 0.5:
 else:
     print("\n Player Retained")
 plt.scatter(X_test[:,0],y_pred)          # To plot test-data
+plt.plot(X_test[:,0],y_pred)
+plt.xlabel("Test-data-points")
+plt.ylabel("Test-data-results")
 plt.show()
